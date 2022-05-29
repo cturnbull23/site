@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+      - matplotlib
+      - pandas
+      - numpy
+      - sql
+    </py-env>
+    <title>Demo Pyscript</title>
+    
+  </head>
+  
+  <body>
+    <h1>My PWS Plots PyScript</h1>
+    <div id="plot"></div>
+    <py-script output="plot">
+      import sql-info
+      
+      print(sql-info.user)
+    </py-script>
+  </body>
+  
+</html>
